@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Syphax | Portfolio</title>
+    <title>Syphax | Développeur Web</title>
     <meta
       name="description"
-      content="Portfolio de Syphax, développeur web passionné par la création de solutions performantes et modernes."
+      content="Portfolio de Syphax, développeur web passionné par la création de solutions modernes, élégantes et performantes."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,55 +17,65 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+
     <header class="site-header">
       <nav class="container nav">
-        <div class="brand">Syphax</div>
+        <a href="#top" class="brand">SYPHAX</a>
         <div class="nav-links">
           <a href="#about">À propos</a>
           <a href="#skills">Compétences</a>
           <a href="#projects">Projets</a>
+          <a href="#experience">Expérience</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
     </header>
 
-    <main>
+    <main id="top">
       <section class="hero">
         <div class="container hero-content">
           <div class="hero-text">
-            <p class="eyebrow">Développeur web</p>
-            <h1>Je crée des solutions web simples, modernes et utiles.</h1>
+            <p class="eyebrow">Développeur web • créateur de solutions</p>
+            <h1>Je conçois des expériences web modernes, élégantes et utiles.</h1>
             <p class="lead">
-              Passionné par le code, l'expérience utilisateur et la création de projets concrets,
-              je conçois des interfaces élégantes et des applications performantes.
+              Je suis Syphax, développeur passionné par la création de produits numériques
+              performants, lisibles et orientés utilisateur. J’aime transformer des idées en
+              expériences réelles, simples à utiliser et puissantes en impact.
             </p>
+
             <div class="cta-group">
               <a class="btn primary" href="#projects">Voir mes projets</a>
               <a class="btn secondary" href="mailto:khimoudsyphax@gmail.com">Me contacter</a>
             </div>
+
             <ul class="socials" aria-label="Réseaux sociaux">
               <li><a href="https://github.com/syphaxGIT" target="_blank" rel="noreferrer">GitHub</a></li>
               <li><a href="https://www.linkedin.com/in/syphax-kh-a70355181/" target="_blank" rel="noreferrer">LinkedIn</a></li>
               <li><a href="mailto:khimoudsyphax@gmail.com">Email</a></li>
             </ul>
           </div>
-          <div class="hero-card">
-            <div class="card-top">
+
+          <div class="hero-panel">
+            <div class="panel-topbar">
               <span class="dot red"></span>
               <span class="dot yellow"></span>
               <span class="dot green"></span>
             </div>
-            <div class="profile-box">
-              <div class="avatar">SK</div>
+
+            <div class="profile-card">
+              <div class="avatar">S</div>
               <div>
                 <h2>Syphax</h2>
                 <p>Full Stack / Frontend Developer</p>
               </div>
             </div>
-            <div class="stats">
+
+            <div class="metrics">
               <div>
                 <strong>2+</strong>
-                <span>ans d'expérience</span>
+                <span>ans</span>
               </div>
               <div>
                 <strong>10+</strong>
@@ -76,6 +86,13 @@
                 <span>curiosité</span>
               </div>
             </div>
+
+            <div class="tech-stack-mini">
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>Node.js</span>
+              <span>Python</span>
+            </div>
           </div>
         </div>
       </section>
@@ -83,11 +100,11 @@
       <section id="about" class="section">
         <div class="container small">
           <p class="section-tag">À propos</p>
-          <h2>Développeur orienté produit et expérience utilisateur.</h2>
+          <h2>Je crée des produits web qui allient design, performance et simplicité.</h2>
           <p>
-            Je suis un développeur web passionné par la création de solutions modernes,
-            performantes et agréables à utiliser. J’aime transformer des idées en projets
-            utiles, en mettant l'accent sur la qualité du code, la simplicité et l'impact.
+            Mon approche repose sur trois valeurs simples : clarté, qualité et impact. Je
+            m’intéresse à la création de sites et d’applications qui sont non seulement beaux,
+            mais aussi utiles, lisibles, maintenables et efficaces pour les utilisateurs.
           </p>
         </div>
       </section>
@@ -95,24 +112,24 @@
       <section id="skills" class="section alt">
         <div class="container">
           <p class="section-tag">Compétences</p>
-          <h2>Ce que je maîtrise</h2>
+          <h2>Mes expertises</h2>
           <div class="skills-grid">
-            <div class="skill-card">
+            <article class="skill-card">
               <h3>Frontend</h3>
-              <p>HTML, CSS, JavaScript, TypeScript, React, Next.js</p>
-            </div>
-            <div class="skill-card">
+              <p>HTML, CSS, JavaScript, TypeScript, React, Next.js, UI design</p>
+            </article>
+            <article class="skill-card">
               <h3>Backend</h3>
               <p>Node.js, Python, APIs REST, architecture logicielle</p>
-            </div>
-            <div class="skill-card">
-              <h3>Outils</h3>
-              <p>Git, GitHub, Docker, PostgreSQL, Firebase, Vercel</p>
-            </div>
-            <div class="skill-card">
-              <h3>Approche</h3>
-              <p>Performance, maintenabilité, UX, qualité de code</p>
-            </div>
+            </article>
+            <article class="skill-card">
+              <h3>Base de données</h3>
+              <p>PostgreSQL, MySQL, Firebase, Supabase</p>
+            </article>
+            <article class="skill-card">
+              <h3>Outils & dev</h3>
+              <p>Git, GitHub, Docker, Vercel, Netlify, CI/CD</p>
+            </article>
           </div>
         </div>
       </section>
@@ -120,28 +137,60 @@
       <section id="projects" class="section">
         <div class="container">
           <p class="section-tag">Projets</p>
-          <h2>Quelques réalisations</h2>
-          <div class="project-grid">
+          <h2>Réalisations</h2>
+          <div class="projects-grid">
             <article class="project-card">
-              <span>Portfolio personnel</span>
+              <span>Portfolio</span>
               <h3>Site vitrine moderne</h3>
-              <p>Une présence en ligne claire et professionnelle pour présenter mes compétences et mes projets.</p>
+              <p>
+                Une présence web claire et premium pour présenter les compétences, les projets et
+                la vision de développement.
+              </p>
             </article>
             <article class="project-card">
               <span>Applications web</span>
               <h3>Solutions orientées utilisateur</h3>
-              <p>Développement d'outils et d'interfaces qui simplifient les tâches et améliorent les workflows.</p>
+              <p>
+                Création d’interfaces et d’outils qui simplifient les usages, améliorent le temps de
+                travail et renforcent la productivité.
+              </p>
             </article>
             <article class="project-card">
               <span>Automatisation</span>
-              <h3>Scripts et outils pratiques</h3>
-              <p>Réalisation de solutions internes destinées à gagner du temps et à améliorer la productivité.</p>
+              <h3>Scripts & outils pratiques</h3>
+              <p>
+                Développement de solutions internes et scripts utiles pour automatiser des tâches
+                répétitives et gagner du temps.
+              </p>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="contact" class="section alt contact">
+      <section id="experience" class="section alt">
+        <div class="container small">
+          <p class="section-tag">Expérience</p>
+          <h2>Un développeur orienté résultats.</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="year">2024</span>
+              <div>
+                <h3>Développement de projets personnels</h3>
+                <p>Conception et mise en ligne de solutions web avec attention portée à l’expérience utilisateur et à la qualité du code.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="year">2025</span>
+              <div>
+                <h3>Approfondissement technique</h3>
+                <p>Apprentissage continu sur les meilleures pratiques de développement web, architecture, performance et automatisation.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
         <div class="container small">
           <p class="section-tag">Contact</p>
           <h2>Travaillons ensemble sur votre prochain projet.</h2>
@@ -156,7 +205,7 @@
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <p>© 2026 Syphax — Tous droits réservés.</p>
+        <p>© 2026 Syphax — Développeur web</p>
       </div>
     </footer>
   </body>
